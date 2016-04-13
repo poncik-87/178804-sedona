@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Alexey Komarov](https://up.htmlacademy.ru/htmlcss/13/user/178804).
-* Наставник: Леонид Лебедев.
+* Наставник: [Леонид Лебедев] (https://htmlacademy.ru/profile/id67135).
 
 ---
 
