@@ -5,8 +5,106 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <div class="container">
+      <header class="main-header">
+      <ul class="main-menu">
+        <li>
+          <a href="#">Информация</a>
+          <a href="#">Фото и видео</a>
+          <a href="#">Карта штата</a>
+          <a href="#">Гостиницы</a>
+        </li>
+      </ul>
+    </header>
+      <main>
+        <section class="logo">
+          <p><span>Welcome</span><br>
+            <span>to the gorgeous</span><br>
+            <span>Sedona</span><br>
+            <span>"Because the Grand Canyon sucks!"</span><br>
+          </p>
+        </section>
+        <div class="introduction">
+          <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
+        <section class="features">
+          <section class="feature">
+            <h2>Настоящий городок</h2>
+            <p>№1</p>
+            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          </section>
+          <section class="subfeatures">
+            <section class="subfeature">
+              <h2>Жилье</h2>
+              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </section>
+            <section class="subfeature">
+              <h2>Еда</h2>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </section>
+            <section class="subfeature">
+              <h2>Суверины</h2>
+              <p>Не только китайского, но и местного произоводства!</p>
+            </section>
+          </section>
+          <section class="feature">
+            <h2>Там есть мост дьявола</h2>
+            <p>№2</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </section>
+          <section class="feature">
+            <h2>Небольшая площадь</h2>
+            <p>№3</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </section>
+          <section class="feature">
+            <h2>Красивая дорога</h2>
+            <p>№4</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </section>
+          <section class="feature">
+            <h2>Мало туристов</h2>
+            <p>№5</p>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </section>
+        </section>
+        <div class="booking-introduction">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <section class="booking">
+          <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+            <label for="arrival-date">Дата заезда:</label>
+            <input id="arrival-date" type="date" name="arrival-date">
+            <label for="departure-date">Дата выезда:</label>
+            <input id="departure-date" type="date" name="departure-date">
+            <label for="adult">Взрослые:</label>
+            <input id="adult" type="number" name="adult" min="0" step="1" value="2">
+            <label for="children">Дети:</label>
+            <input id="children" type="number" name="children" min="0" step="1" value="0">
+            <button class="booking-btn" type="submit">Найти</button>
+          </form>
+        </section>
+        <div class="map">
+          <figure>
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Карта штата">
+          </figure>
+        </div>
+      </main>
+      <footer class="main-footer">
+        <section class="hashtags">
+          <p>#visitsedona</p>
+        </section>
+        <section class="socials">
+          <a class="social social-tweeter" href="#">tweeter.com</a>
+          <a class="social social-facebook" href="#">facebook.com</a>
+          <a class="social social-youtube" href="#">youtube.com</a>
+        </section>
+        <section class="copyright">
+          <a href="#">htmlacademy.ru</a>
+        </section>
+      </footer>
+    </div>
   </body>
 </html>
