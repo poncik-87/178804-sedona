@@ -9,32 +9,42 @@
       <div class="logo">
       </div>
       <header class="main-header">
-      <ul class="main-menu">
-        <li>
-          <a href="#">Информация</a>
-          <a href="#">Фото и видео</a>
-          <a href="#">Карта штата</a>
-          <a href="#">Гостиницы</a>
-        </li>
-      </ul>
+        <nav class="main-menu">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li>
+              <a><img src="http://placehold.it/100x100" width="100" height="100" alt="логотип Седона"></a>
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="hotels.html">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
     </header>
       <main>
         <section class="logo">
-          <p><span>Welcome</span><br>
-            <span>to the gorgeous</span><br>
-            <span>Sedona</span><br>
-            <span>"Because the Grand Canyon sucks!"</span><br>
-          </p>
+          <img src="http://placehold.it/200x200" width="200" height="200" alt="добро пожаловать в Седону">
         </section>
         <div class="introduction">
-          <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <section class="features">
           <section class="feature">
-            <h2>Настоящий городок</h2>
-            <p>№1</p>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <figure>
+              <h2>Настоящий городок</h2>
+              <b>№1</b>
+              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <img src="http://placehold.it/200x100" width="200" height="100" alt="вид на Седону">
+            </figure>
           </section>
           <section class="subfeatures">
             <section class="subfeature">
@@ -51,9 +61,12 @@
             </section>
           </section>
           <section class="feature">
-            <h2>Там есть мост дьявола</h2>
-            <p>№2</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <figure>
+              <img src="http://placehold.it/200x100" width="200" height="100" alt="вид на Каньон">
+              <h2>Там есть мост дьявола</h2>
+              <b>№2</b>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </figure>
           </section>
           <section class="feature">
             <h2>Небольшая площадь</h2>
@@ -71,40 +84,37 @@
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </section>
         </section>
-        <div class="booking-introduction">
+        <div class="bookong">
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        </div>
-        <section class="booking">
-          <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
-            <label for="arrival-date">Дата заезда:</label>
-            <input id="arrival-date" type="date" name="arrival-date">
-            <label for="departure-date">Дата выезда:</label>
-            <input id="departure-date" type="date" name="departure-date">
-            <label for="adult">Взрослые:</label>
-            <input id="adult" type="number" name="adult" min="0" step="1" value="2">
-            <label for="children">Дети:</label>
-            <input id="children" type="number" name="children" min="0" step="1" value="0">
-            <button class="booking-btn" type="submit">Найти</button>
-          </form>
-        </section>
-        <div class="map">
-          <figure>
-            <img src="http://placehold.it/450x200" width="450" height="200" alt="Карта штата">
-          </figure>
+          <section class="booking-form">
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <label for="arrival-date">Дата заезда:</label>
+              <input id="arrival-date" type="date" name="arrival-date">
+              <label for="departure-date">Дата выезда:</label>
+              <input id="departure-date" type="date" name="departure-date">
+              <label for="adult">Взрослые:</label>
+              <input id="adult" type="number" name="adult" min="0" step="1" value="2">
+              <label for="children">Дети:</label>
+              <input id="children" type="number" name="children" min="0" step="1" value="0">
+              <button class="booking-btn" type="submit">Найти</button>
+            </form>
+          </section>
+          <div class="booking-map" id="booking-map">
+          </div>
         </div>
       </main>
       <footer class="main-footer">
         <section class="hashtags">
-          <p>#visitsedona</p>
+          <b>#visitsedona</b>
         </section>
         <section class="socials">
-          <a class="social social-tweeter" href="#">tweeter.com</a>
+          <a class="social social-twitter" href="#">twitter.com</a>
           <a class="social social-facebook" href="#">facebook.com</a>
           <a class="social social-youtube" href="#">youtube.com</a>
         </section>
         <section class="copyright">
-          <a href="#">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/">Website by <img src="http://placehold.it/50x30" width="50" height="30" alt="htmlacademy.ru"></a>
         </section>
       </footer>
     </div>
