@@ -2,8 +2,8 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: black;
-  font-weight: bold;
-  font-family: "PT Sans Regular", sans-serif;
+  font-weight: normal;
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
 }
 
@@ -12,7 +12,7 @@ h1 {
   line-height: 26px;
   color: black;
   font-weight: bold;
-  font-family: "PTSans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
 }
 
@@ -21,6 +21,6 @@ h2 {
   line-height: 21px;
   color: black;
   font-weight: bold;
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
 }
