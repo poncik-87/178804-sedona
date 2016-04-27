@@ -9,7 +9,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 
-  background-image: url("../img/work-background.jpg");
+  /*background-image: url("../img/work-background.jpg");*/
 }
 
 h1 {
@@ -24,10 +24,10 @@ h2 {
   font-weight: bold;
 }
 
-section,
+/*section,
 div {
   outline: 1px red solid;
-}
+}*/
 
 .clearfix::after {
   content: "";
@@ -36,9 +36,14 @@ div {
   clear: both;
 }
 
-figure{
+.feature-image{
+  line-height: 0px;
   margin: 0;
   padding: 0px;
+}
+
+.feature-image img {
+  font-size: 14px;
 }
 
 .container {
