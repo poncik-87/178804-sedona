@@ -1,10 +1,16 @@
 body {
+  min-height: 1280px;
+  margin: 0;
+  padding: 0;
+
   font-size: 14px;
   line-height: 24px;
   color: black;
   font-weight: normal;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
+
+  background-image: url("../img/work-background.jpg");
 }
 
 h1 {
@@ -17,4 +23,131 @@ h2 {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
+}
+
+section,
+div {
+  outline: 1px red solid;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+figure{
+  margin: 0;
+  padding: 0px;
+}
+
+.container {
+  width: 1200px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.main-header {
+  padding: 1px;
+  min-height: 56px;
+}
+
+.main-menu ul {
+  list-style-type: none;
+}
+
+.main-menu li {
+  float: left;
+}
+
+.logo {
+  height: 570px;
+  text-align: center;
+}
+
+.introduction {
+  width: 300;
+  min-height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1px;
+}
+
+.feature {
+  min-height: 256px;
+}
+
+.feature-pictured-right .feature-text{
+  float: left;
+  width: 400px;
+}
+
+.feature-pictured-right .feature-image{
+  float: right;
+}
+
+.subfeature{
+  float: left;
+
+  width: 400px;
+  min-height: 330px;
+}
+
+.feature-pictured-left .feature-image{
+  float: left;
+}
+
+.feature-pictured-left .feature-text{
+  float: right;
+  width: 400px;
+}
+
+.feature-non-pictured {
+  float: left;
+  width: 400px;
+}
+
+.booking {
+  position: relative;
+  min-height: 748px;
+}
+
+.booking-introduction {
+  padding: 1px;
+  min-height: 290px;
+}
+
+.booking-form {
+  position: absolute;
+  left: 316px;
+  top: 206px;
+
+  width: 568px;
+  height: 480px;
+}
+
+.booking-map {
+  height: 472px;
+}
+
+.main-footer {
+  margin-top: 40px;
+}
+
+.hashtags {
+  float: left;
+
+  margin-left: 134px;
+  margin-right: 300px;
+}
+
+.socials {
+  float: left;
+}
+
+.copyright {
+  float: right;
+
+  margin-right: 102px;
 }
