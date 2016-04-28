@@ -93,7 +93,6 @@ div {
 
 .subfeature{
   float: left;
-
   width: 400px;
   min-height: 330px;
 }
@@ -114,6 +113,7 @@ div {
 
 .booking {
   position: relative;
+
   min-height: 748px;
 }
 
@@ -144,7 +144,6 @@ div {
 
 .hashtags {
   float: left;
-
   margin-left: 134px;
   margin-right: 300px;
 }
@@ -155,7 +154,6 @@ div {
 
 .copyright {
   float: right;
-
   margin-right: 102px;
 }
 
@@ -168,13 +166,11 @@ div {
 
 .filter fieldset {
   float: left;
-
   width: 241px;
 }
 
 .filter fieldset:last-child {
   float: right;
-
   width: 328px;
 }
 
@@ -184,6 +180,7 @@ div {
 
 .sort ul {
   display: inline-block;
+
   list-style-type: none;
 }
 
