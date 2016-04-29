@@ -258,8 +258,8 @@ h2 {
 .filter {
   min-height: 176px;
   padding-top: 40px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
 .filter fieldset {
@@ -273,33 +273,54 @@ h2 {
 }
 
 .sort {
-  min-height: 87px;
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
+.sort b {
+  float: left;
+  width: 140px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .sort ul {
-  display: inline-block;
+  float: left;
+  width: 500px;
+  margin-top: 0;
+  margin-bottom: 0;
 
   list-style-type: none;
 }
 
 .sort li {
   float: left;
+  width: 100px;
 }
 
 .hotel{
-  padding-top: 31px;
-  padding-bottom: 23px;
+  padding-top: 17px;
+  padding-bottom: 16px;
   padding-left: 73px;
   padding-right: 73px;
 }
 
 .hotel-image {
   float: left;
+  width: 135px;
+  margin-left: 0;
   margin-right: 30px;
+}
+
+.hotel-image img {
+  display: block;
 }
 
 .hotel-parameters {
   float: left;
+  width: 260px;
 }
 
 .hotel-parameters h3 {
@@ -308,4 +329,5 @@ h2 {
 
 .hotel-rating {
   float: right;
+  width: 111px;
 }

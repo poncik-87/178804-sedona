@@ -7,9 +7,9 @@
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
+     <header class="main-header">
         <nav class="main-menu">
-          <ul>
+          <ul class="clearfix">
             <li>
               <a href="#">Информация</a>
             </li>
@@ -17,20 +17,18 @@
               <a href="#">Фото и видео</a>
             </li>
             <li>
-              <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="логотип Седона"></a>
-            </li>
-            <li>
               <a href="#">Карта штата</a>
             </li>
             <li>
-              <a>Гостиницы</a>
+              <a href="hotels.html">Гостиницы</a>
             </li>
           </ul>
+          <a class="main-menu-logo"><img src="img/logo.png" width="138" height="70" alt="логотип Седона"></a>
         </nav>
-      </header>
+    </header>
       <main>
-        <section class="filter clearfix">
-          <form action="https://echo.htmlacademy.ru" method="get">
+        <section class="filter">
+          <form class="clearfix" action="https://echo.htmlacademy.ru" method="get">
              <fieldset>
                <legend>Инфраструктура:</legend>
                <input id="filter-pool" type="checkbox" name="filter-pool" checked>
@@ -71,7 +69,7 @@
         <section class="sort clearfix">
           <b class="hotels-found">Найдено: <span class="hotels-found-count">3</span></b>
           <b>Сортировка:</b>
-          <ul>
+          <ul class="clearfix">
             <li>
               <a class="active-sort">По цене</a>
             </li>
@@ -79,7 +77,7 @@
               <a href="#">По типу</a>
             </li>
             <li>
-              <a href="#">По по рейтингу</a>
+              <a href="#">По рейтингу</a>
             </li>
           </ul>
           <div class="order">
@@ -142,7 +140,7 @@
           </div>
         </article>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer clearfix">
         <section class="hashtags">
           <b>#visitsedona</b>
         </section>
