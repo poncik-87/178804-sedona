@@ -9,7 +9,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 
-  /*background-image: url("../img/work-background.jpg");*/
+  background-color: #f2f2f2;
 }
 
 h1 {
@@ -23,23 +23,11 @@ h2 {
   line-height: 21px;
   font-weight: bold;
 }
-
-/*section,
-div {
-  outline: 1px red solid;
-}*/
-
 .clearfix::after {
   content: "";
 
   display: table;
   clear: both;
-}
-
-.feature-image{
-  line-height: 0px;
-  margin: 0;
-  padding: 0px;
 }
 
 .feature-image img {
@@ -48,84 +36,186 @@ div {
 
 .container {
   width: 1200px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-header {
-  padding: 1px;
-  min-height: 54px;
+  padding: 15px 73px;
 }
 
 .main-menu ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   list-style-type: none;
 }
 
-.main-menu li {
+.main-menu li{
+  width: 20%;
+}
+
+.main-menu li:nth-child(1),
+.main-menu li:nth-child(2){
   float: left;
 }
 
+.main-menu li:nth-child(3),
+.main-menu li:nth-child(4){
+  float: right;
+
+  text-align: right;
+}
+
+.main-menu-logo{
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 138px;
+  height: 70px;
+  margin-left: -69px;
+}
+
 .logo {
-  height: 570px;
+  height: 508px;
+  padding-top: 76px;
+  box-sizing: border-box;
+
   text-align: center;
 }
 
 .introduction {
-  width: 500px;
-  min-height: 152px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1px;
+  padding-top: 61px;
+  padding-bottom:  51px;
 }
 
-.feature {
-  min-height: 256px;
+.introduction h1 {
+  width: 440px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+
+.introduction p {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+
+  text-align: center;
 }
 
 .feature-pictured-right .feature-text{
   float: left;
   width: 400px;
+
+  text-align: center;
 }
 
 .feature-pictured-right .feature-image{
   float: right;
+  width: 800px;
+}
+
+.feature-image{
+  position: relative;
+  width: 800px;
+  height: 256px;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.feature-image img {
+  position: relative;
+  top: 50%;
+  display: block;
+  transform: translateY(-50%);
 }
 
 .subfeature{
   float: left;
   width: 400px;
-  min-height: 330px;
+  padding-top: 160px;
+  padding-bottom: 82px;
+
+  text-align: center;
+}
+
+.subfeature h2 {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.subfeature p {
+  margin-bottom: 0px;
+
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .feature-pictured-left .feature-image{
   float: left;
+  width: 800px;
 }
 
 .feature-pictured-left .feature-text{
   float: right;
   width: 400px;
+
+  text-align: center;
 }
 
 .feature-non-pictured {
   float: left;
   width: 400px;
+  min-height: 256px;
+  padding-top: 50px;
+  padding-bottom: 64px;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background-color: #eeeeee;
 }
 
 .booking {
   position: relative;
-
-  min-height: 748px;
 }
 
 .booking-introduction {
-  width: 500px;
-  min-height: 290px;
+  padding-top: 58px;
+  padding-bottom: 136px;
+}
+
+.booking-introduction h2 {
+  width: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding: 1px;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.booking-introduction p {
+  width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+
+  text-align: center;
 }
 
 .booking-form {
+  display: none;
   position: absolute;
   left: 316px;
   top: 206px;
@@ -135,11 +225,19 @@ div {
 }
 
 .booking-map {
-  height: 472px;
+  height: 593px;
+
+  background: #f2f1ef url("../img/map.jpg");
 }
 
 .main-footer {
+  min-height: 120px;
   margin-top: 40px;
+}
+
+.stratify {
+  transform: translateY(-100%);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .hashtags {
