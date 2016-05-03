@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
     <title>Седона: Отели</title>
   </head>
@@ -31,21 +33,33 @@
           <form class="clearfix" action="https://echo.htmlacademy.ru" method="get">
              <fieldset>
                <legend>Инфраструктура:</legend>
-               <input id="filter-pool" type="checkbox" name="filter-pool" checked>
-               <label for="filter-pool">Бассейн</label>
-               <input id="filter-parking" type="checkbox" name="filter-parking">
-               <label for="filter-parking">Парковка</label>
-               <input id="filter-wifi" type="checkbox" name="filter-wifi">
-               <label for="filter-wifi">Wi-Fi</label>
+               <div class="filter-field">
+                 <input id="filter-pool" type="checkbox" name="filter-pool" checked>
+                 <label for="filter-pool">Бассейн</label>
+               </div>
+               <div class="filter-field">
+                 <input id="filter-parking" type="checkbox" name="filter-parking">
+                 <label for="filter-parking">Парковка</label>
+               </div>
+               <div class="filter-field">
+                 <input id="filter-wifi" type="checkbox" name="filter-wifi">
+                 <label for="filter-wifi">Wi-Fi</label>
+               </div>
             </fieldset>
             <fieldset>
                <legend>Тип жилья:</legend>
-               <input id="filter-hotel" type="checkbox" name="filter-hotel" checked>
+              <div class="filter-field">
+                <input id="filter-hotel" type="checkbox" name="filter-hotel" checked>
                <label for="filter-hotel">Гостиница</label>
-               <input id="filter-motel" type="checkbox" name="filter-motel" checked>
+              </div>
+              <div class="filter-field">
+                <input id="filter-motel" type="checkbox" name="filter-motel" checked>
                <label for="filter-motel">Мотель</label>
-               <input id="filter-apartments" type="checkbox" name="filter-apartments" checked>
+              </div>
+              <div class="filter-field">
+                <input id="filter-apartments" type="checkbox" name="filter-apartments" checked>
                <label for="filter-apartments">Апартаменты</label>
+              </div>
             </fieldset>
             <fieldset>
               <legend>Стоимость в сутки:</legend>
@@ -59,8 +73,8 @@
                 <div class="bar">
                   <div class="active-bar"></div>
                 </div>
-                <div class="scrollbar"></div>
-                <div class="scrollbar"></div>
+                <div class="scrollbar first-scrollbar"></div>
+                <div class="scrollbar second-scrollbar"></div>
               </div>
               <button class="btn" type="submit">Показать</button>
             </fieldset>
@@ -68,7 +82,7 @@
         </section>
         <section class="sort clearfix">
           <b class="hotels-found">Найдено: <span class="hotels-found-count">3</span></b>
-          <b>Сортировка:</b>
+          <span>Сортировка:</span>
           <ul class="clearfix">
             <li>
               <a class="active-sort">По цене</a>
