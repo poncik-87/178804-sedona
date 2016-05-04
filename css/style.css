@@ -374,16 +374,111 @@ h2 {
   height: 480px;
 
   background: #ffffff;
+  box-shadow: 0 7px 20px 10px rgba(0, 0, 0, 0.15);
 }
 
 .booking-form h3 {
+  margin: 0;
   height: 68px;
 
   text-align: center;
   vertical-align: middle;
   line-height: 68px;
+  color: white;
 
   background: #766357;
+}
+
+.booking-form form {
+  padding: 56px 60px;
+
+}
+
+.booking-form .field {
+  margin-bottom: 32px;
+}
+
+.booking-form form label {
+  margin-right: 20px;
+
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+  font-weight: bold;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.booking-form form input {
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+  font-weight: bold;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+
+  background: #f2f2f2;
+  border: none;
+}
+
+.booking-form form input:hover {
+  background: #ebebeb;
+}
+
+.booking-form form input:focus {
+  background: white;
+  border: 2px solid #e5e5e5 inset;
+}
+
+.booking-form form input[type="text"] {
+  width: 320px;
+  height: 40px;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+
+.booking-form form input[type="number"] {
+  width: 117px;
+  height: 40px;
+
+  text-align: center;
+}
+
+.booking-form .adult-label {
+  margin-right: 41px;
+}
+
+.booking-form .adult-input {
+  margin-right: 50px;
+}
+
+.booking-form .children-label {
+  margin: 0;
+}
+
+.booking-btn {
+  margin-top: 18px;
+  width: 456px;
+  height: 58px;
+
+  font-size: 14px;
+  line-height: 26px;
+  color: white;
+  font-weight: bold;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.booking-btn:hover {
+  background-color: #669ec0;
+}
+
+.booking-btn:active {
+  color: #88b6d1;
+  background-color: #5496bd;
 }
 
 .booking-map {

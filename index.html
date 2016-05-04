@@ -107,14 +107,20 @@
           <section class="booking-form">
             <h3>Поиск гостиницы в Седоне</h3>
             <form action="https://echo.htmlacademy.ru" method="get">
-              <label for="arrival-date">Дата заезда:</label>
-              <input id="arrival-date" type="date" name="arrival-date">
-              <label for="departure-date">Дата выезда:</label>
-              <input id="departure-date" type="date" name="departure-date">
-              <label for="adult">Взрослые:</label>
-              <input id="adult" type="number" name="adult" min="0" step="1" value="2">
-              <label for="children">Дети:</label>
-              <input id="children" type="number" name="children" min="0" step="1" value="0">
+              <div class="field">
+                <label for="arrival-date">Дата заезда:</label>
+                <input id="arrival-date" type="text" name="arrival-date" value="24 апреля 2016">
+              </div>
+              <div class="field">
+                <label for="departure-date">Дата выезда:</label>
+                <input id="departure-date" type="text" name="departure-date" value="4 июля 2016">
+              </div>
+              <div class="field">
+                <label class="adult-label" for="adult">Взрослые:</label>
+                <input class="adult-input" id="adult" type="number" name="adult" min="0" step="1" value="2">
+                <label class="children-label" for="children">Дети:</label>
+                <input class="children-input" id="children" type="number" name="children" min="0" step="1" value="0">
+              </div>
               <button class="booking-btn" type="submit">Найти</button>
             </form>
           </section>
