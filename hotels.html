@@ -22,7 +22,7 @@
               <a href="#">Карта штата</a>
             </li>
             <li>
-              <a href="hotels.html">Гостиницы</a>
+              <a class="active">Гостиницы</a>
             </li>
           </ul>
           <a class="main-menu-logo"><img src="img/logo.png" width="138" height="70" alt="логотип Седона"></a>
@@ -73,8 +73,8 @@
                 <div class="bar">
                   <div class="active-bar"></div>
                 </div>
-                <div class="scrollbar first-scrollbar"></div>
-                <div class="scrollbar second-scrollbar"></div>
+                <div class="slide first-slide"></div>
+                <div class="slide second-slide"></div>
               </div>
               <button class="btn" type="submit">Показать</button>
             </fieldset>
@@ -83,7 +83,7 @@
         <section class="sort clearfix">
           <b class="hotels-found">Найдено: <span class="hotels-found-count">3</span></b>
           <span>Сортировка:</span>
-          <ul class="clearfix">
+          <ul class="sort-type clearfix">
             <li>
               <a class="active-sort">По цене</a>
             </li>
@@ -94,10 +94,14 @@
               <a href="#">По рейтингу</a>
             </li>
           </ul>
-          <div class="order">
-            <div class="order-descending"></div>
-            <div class="order-ascending"></div>
-          </div>
+          <ul class="sort-order clearfix">
+            <li>
+              <a class="active-sort icon-down-dir"></a>
+            </li>
+            <li>
+              <a class="icon-up-dir" href="#"></a>
+            </li>
+          </ul>
         </section>
         <article class="hotel clearfix">
           <figure class="hotel-image">
@@ -113,7 +117,12 @@
             </div>
           </div>
           <div class="hotel-rating">
-            <div class="rating-stars 4stars"></div>
+            <div class="rating-stars">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+            </div>
             <strong>Рейтинг: 8.5</strong>
           </div>
         </article>
@@ -131,7 +140,10 @@
             </div>
           </div>
           <div class="hotel-rating">
-            <div class="rating-stars 2stars"></div>
+            <div class="rating-stars">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+            </div>
             <strong>Рейтинг: 8.9</strong>
           </div>
         </article>
@@ -149,7 +161,11 @@
             </div>
           </div>
           <div class="hotel-rating">
-            <div class="rating-stars 3stars"></div>
+            <div class="rating-stars">
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+            </div>
             <strong>Рейтинг: 9.2</strong>
           </div>
         </article>
@@ -159,12 +175,12 @@
           <b>#visitsedona</b>
         </section>
         <section class="socials">
-          <a class="social social-twitter" href="#">twitter.com</a>
-          <a class="social social-facebook" href="#">facebook.com</a>
-          <a class="social social-youtube" href="#">youtube.com</a>
+          <a class="social" href="#">twitter.com <span class="icon-twitter"></span></a>
+          <a class="social" href="#">facebook.com <span class="icon-facebook"></span></a>
+          <a class="social" href="#">youtube.com <span class="icon-youtube"></span></a>
         </section>
         <section class="copyright">
-          <a href="https://htmlacademy.ru/">Website by <img src="img/copyright-logo.png" width="113" height="39" alt="htmlacademy.ru"></a>
+          <a href="https://htmlacademy.ru/">Website by<span> htmlacademy.ru</span></a>
         </section>
       </footer>
     </div>
