@@ -4,7 +4,7 @@ body {
 
   font-size: 14px;
   line-height: 21px;
-  color: black;
+  color: #333333;
   font-weight: normal;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
@@ -215,6 +215,7 @@ h2 {
 .feature-pictured-text b {
   display: block;
   margin: 26px 0;
+  font-weight: normal;
 }
 
 .feature-pictured-text p {
@@ -267,21 +268,21 @@ h2 {
   width: 75px;
   height: 72px;
 
-  background: transparent url("../img/sprite-main.png") 0 -146px no-repeat;
+  background: transparent url("../img/sprite.png") -10px -147px no-repeat;
 }
 
 .subfeature-food::before {
   width: 74px;
   height: 70px;
 
-  background: transparent url("../img/sprite-main.png") 0 0 no-repeat;
+  background: transparent url("../img/sprite.png") -10px -229px no-repeat;
 }
 
 .subfeature-gifts::before {
   width: 64px;
   height: 76px;
 
-  background: transparent url("../img/sprite-main.png") 0 -70px no-repeat;
+  background: transparent url("../img/sprite.png") -10px -309px no-repeat;
 }
 
 .subfeature h2 {
@@ -329,7 +330,7 @@ h2 {
 .feature-non-pictured-text b {
   display: block;
   margin: 30px 0;
-
+  font-weight: normal;
 }
 
 .feature-non-pictured-text p {
@@ -342,8 +343,7 @@ h2 {
 }
 
 .booking-introduction {
-  padding-top: 58px;
-  padding-bottom: 136px;
+  padding: 58px 0;
 }
 
 .booking-introduction h2 {
@@ -352,6 +352,9 @@ h2 {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 30px;
+
+  font-size: 30px;
+  line-height: 40px;
 
   text-align: center;
 }
@@ -362,31 +365,38 @@ h2 {
   margin-right: auto;
   margin-bottom: 0px;
 
+  line-height: 24px;
+
   text-align: center;
+}
+
+.search-btn {
+  position: relative;
+  z-index: 5;
+  display: block;
+  width: 570px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  color: white;
+  text-decoration: none;
+
+  background: #766357;
 }
 
 .booking-form {
   position: absolute;
   left: 316px;
-  top: 206px;
+  top: 100%;
 
   width: 568px;
-  height: 480px;
 
   background: #ffffff;
   box-shadow: 0 7px 20px 10px rgba(0, 0, 0, 0.15);
-}
-
-.booking-form h3 {
-  margin: 0;
-  height: 68px;
-
-  text-align: center;
-  vertical-align: middle;
-  line-height: 68px;
-  color: white;
-
-  background: #766357;
 }
 
 .booking-form form {
@@ -396,10 +406,28 @@ h2 {
 
 .booking-form .field {
   margin-bottom: 32px;
+
+  font-size: 0;
 }
 
-.booking-form form label {
-  margin-right: 20px;
+.half-field {
+  display: inline-block;
+  width: 50%;
+}
+
+.half-field:first-child {
+  float: left;
+}
+
+.half-field:last-child {
+  float: right;
+}
+
+.booking-form label {
+  display: inline-block;
+  float: left;
+  width: 95px;
+  box-sizing: border-box;
 
   font-size: 14px;
   line-height: 26px;
@@ -409,7 +437,12 @@ h2 {
   text-transform: uppercase;
 }
 
-.booking-form form input {
+.booking-form input {
+  display: inline-block;
+  float: right;
+  width: 330px;
+  height: 40px;
+
   font-size: 14px;
   line-height: 26px;
   color: black;
@@ -431,37 +464,27 @@ h2 {
 }
 
 .booking-form form input[type="text"] {
-  width: 330px;
-  height: 40px;
   box-sizing: border-box;
   padding-left: 15px;
 }
 
 .booking-form form input[type="number"] {
-  width: 117px;
-  height: 40px;
+  width: 105px;
 
   text-align: center;
 }
 
-.booking-form .adult-label {
-  margin-right: 41px;
-}
-
-.booking-form .adult-input {
-  margin-right: 50px;
-}
-
-.booking-form .children-label {
-  margin: 0;
+.children-label {
+  text-align: right;
+  padding-right: 20px;
 }
 
 .booking-btn {
   margin-top: 18px;
   width: 456px;
-  height: 58px;
+  padding: 20px;
 
-  font-size: 14px;
+  font-size: 21px;
   line-height: 26px;
   color: white;
   font-weight: bold;
@@ -539,6 +562,10 @@ h2 {
 }
 
 .social span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+
   font-size: 19px;
   line-height: 48px;
   font-family: "symbols-sedona";
@@ -561,7 +588,7 @@ h2 {
 .copyright a {
   display: inline-block;
   height: 39px;
-  padding-right: 118px;
+  padding-right: 138px;
   vertical-align: top;
 
   text-decoration: none;
@@ -572,15 +599,15 @@ h2 {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 
-  background: url("../img/copyright-logo.png") 100% 100% no-repeat;
+  background: url("../img/sprite.png") 100% -98px no-repeat;
 }
 
 .copyright a:hover {
-  background: url("../img/copyright-logo-hvr.png") 100% 100% no-repeat;
+  background: url("../img/sprite.png") 100% -49px no-repeat;
 }
 
 .copyright a:active {
-  background: url("../img/copyright-logo-down.png") 100% 100% no-repeat;
+  background: url("../img/sprite.png") 100% -0px no-repeat;
 }
 
 .copyright a span {
@@ -832,11 +859,10 @@ h2 {
   font-weight: normal;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
-  color: black;
+  color: rgba(0, 0, 0, 0.3);
 
   text-decoration: none;
-  opacity: 0.3;
-  border-bottom: 1px dotted black;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-type a.active-sort {
@@ -1006,6 +1032,9 @@ h2 {
 .hotel-rating strong {
   display: inline-block;
   padding: 5px 15px;
+
+  font-weight: normal;
+  color: #666666;
 
   background-color: #f2f2f2;
 }

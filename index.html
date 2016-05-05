@@ -19,10 +19,10 @@
               <a href="#">Фото и видео</a>
             </li>
             <li>
-              <a href="#">Карта штата</a>
+              <a href="hotels.html">Гостиницы</a>
             </li>
             <li>
-              <a href="hotels.html">Гостиницы</a>
+              <a href="#">Карта штата</a>
             </li>
           </ul>
           <a class="main-menu-logo"><img src="img/logo.png" width="138" height="70" alt="логотип Седона"></a>
@@ -104,29 +104,32 @@
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
+          <a class="search-btn" href="hotels.html">Поиск гостиницы в Седоне</a>
           <section class="booking-form">
-            <h3>Поиск гостиницы в Седоне</h3>
             <form action="https://echo.htmlacademy.ru" method="get">
-              <div class="field">
+              <div class="field clearfix">
                 <label for="arrival-date">Дата заезда:</label>
                 <input id="arrival-date" type="text" name="arrival-date" value="24 апреля 2016">
               </div>
-              <div class="field">
+              <div class="field clearfix">
                 <label for="departure-date">Дата выезда:</label>
                 <input id="departure-date" type="text" name="departure-date" value="4 июля 2016">
               </div>
-              <div class="field">
-                <label class="adult-label" for="adult">Взрослые:</label>
+              <div class="field clearfix">
+                <div class="half-field">
+                  <label class="adult-label" for="adult">Взрослые:</label>
                 <input class="adult-input" id="adult" type="number" name="adult" min="0" step="1" value="2">
-                <label class="children-label" for="children">Дети:</label>
+                </div>
+                <div class="half-field">
+                  <label class="children-label" for="children">Дети:</label>
                 <input class="children-input" id="children" type="number" name="children" min="0" step="1" value="0">
+                </div>
               </div>
               <button class="booking-btn" type="submit">Найти</button>
             </form>
           </section>
-          <div class="booking-map" id="booking-map">
-          </div>
         </div>
+        <div class="booking-map" id="booking-map"></div>
       </main>
       <footer class="main-footer footer-stratify clearfix">
         <section class="hashtags">
