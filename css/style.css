@@ -71,6 +71,16 @@ h2 {
   clear: both;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+-moz-appearance: textfield;
+}
+
 .feature-image img {
   font-size: 14px;
 }
@@ -85,7 +95,10 @@ h2 {
 }
 
 .main-header {
-  padding: 15px 73px;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
 .main-menu ul {
@@ -96,7 +109,7 @@ h2 {
 }
 
 .main-menu li{
-  width: 20%;
+  width: 23%;
 }
 
 .main-menu li:nth-child(1),
@@ -113,12 +126,9 @@ h2 {
 
 .main-menu a {
   text-decoration: none;
-  font-size: 14px;
   line-height: 26px;
   color: black;
   font-weight: bold;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
 }
 
 .main-menu a:hover {
@@ -163,7 +173,7 @@ h2 {
     url("../img/background.jpg");
   background-position:
     50% 100%,
-    0% 0%;
+    0% 21%;
   background-repeat:
     no-repeat,
     no-repeat;
@@ -172,14 +182,14 @@ h2 {
 }
 
 .introduction {
-  padding-top: 61px;
-  padding-bottom:  51px;
+  padding-top: 58px;
+  padding-bottom:  55px;
 }
 
 .introduction h1 {
   width: 440px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   margin-left: auto;
   margin-right: auto;
 
@@ -202,19 +212,21 @@ h2 {
 }
 
 .feature-pictured-text {
-  padding: 53px 60px;
-  width: 280px;
+  padding: 53px 48px;
+  width: 304px;
 
   text-align: center;
 }
 
 .feature-pictured-text h2 {
-  margin: 0;
+  width: 160px;
+  margin: 0 auto;
 }
 
 .feature-pictured-text b {
   display: block;
-  margin: 26px 0;
+  margin-top: 24px;
+  margin-bottom: 21px;
   font-weight: normal;
 }
 
@@ -242,7 +254,7 @@ h2 {
 
 .feature-image img {
   position: relative;
-  top: 50%;
+  top: 48%;
   display: block;
   transform: translateY(-50%);
 }
@@ -265,6 +277,10 @@ h2 {
 }
 
 .subfeature-housing::before {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -2%);
+
   width: 75px;
   height: 72px;
 
@@ -272,6 +288,10 @@ h2 {
 }
 
 .subfeature-food::before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
   width: 74px;
   height: 70px;
 
@@ -279,6 +299,10 @@ h2 {
 }
 
 .subfeature-gifts::before {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -7%);
+
   width: 64px;
   height: 76px;
 
@@ -295,9 +319,6 @@ h2 {
   width: 290px;
   margin-left: auto;
   margin-right: auto;
-
-  font-size: 14px;
-  line-height: 21px;
 }
 
 .feature-pictured-left .feature-image{
@@ -317,19 +338,23 @@ h2 {
 }
 
 .feature-non-pictured-text {
-  padding-top: 50px;
-  padding-bottom: 64px;
+  padding-top: 46px;
+  padding-bottom: 60px;
 
   text-align: center;
 }
 
 .feature-non-pictured-text h2 {
-  margin: 0;
+  margin: 0 auto;
+  width: 130px;
 }
 
 .feature-non-pictured-text b {
   display: block;
-  margin: 30px 0;
+  margin-top: 24px;
+  margin-bottom: 22px;
+  margin-left: 0;
+  margin-right: 0;
   font-weight: normal;
 }
 
@@ -343,7 +368,10 @@ h2 {
 }
 
 .booking-introduction {
-  padding: 58px 0;
+  padding-top: 46px;
+  padding-bottom: 48px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .booking-introduction h2 {
@@ -351,7 +379,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 
   font-size: 30px;
   line-height: 40px;
@@ -372,12 +400,12 @@ h2 {
 
 .search-btn {
   position: relative;
-  z-index: 5;
+  z-index: 6;
   display: block;
-  width: 570px;
+  width: 568px;
   margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 28px;
+  padding-bottom: 32px;
 
   text-align: center;
   font-size: 21px;
@@ -397,18 +425,22 @@ h2 {
   width: 568px;
 
   background: #ffffff;
-  box-shadow: 0 7px 20px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .booking-form form {
-  padding: 56px 60px;
+  padding: 54px 55px;
 
 }
 
 .booking-form .field {
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 
   font-size: 0;
+}
+
+.booking-form .field:last-of-type {
+  margin-top: 31px;
 }
 
 .half-field {
@@ -424,29 +456,66 @@ h2 {
   float: right;
 }
 
+.input-container {
+  position: relative;
+  float: right;
+}
+
+.input-container span {
+  position: absolute;
+
+  display: inline-block;
+  padding: 6px 0;
+
+
+  line-height: 26px;
+  font-family: "symbols-sedona";
+
+  cursor: pointer;
+}
+
+.input-container span.icon-calendar {
+  right: 6px;
+  top: 2px;
+
+  font-size: 21px;
+}
+
+.input-container span.icon-minus {
+  left: 12px;
+  top: 3px;
+
+  font-size: 14px;
+}
+
+.input-container span.icon-plus {
+  right: 10px;
+  top: 2px;
+
+  font-size: 14px;
+}
+
 .booking-form label {
   display: inline-block;
   float: left;
   width: 95px;
   box-sizing: border-box;
 
+  padding-top: 7px;
+
   font-size: 14px;
   line-height: 26px;
   color: black;
   font-weight: bold;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
 }
 
 .booking-form input {
   display: inline-block;
-  float: right;
-  width: 330px;
-  height: 40px;
+  width: 346px;
+  height: 38px;
+  margin: 0;
 
   font-size: 14px;
-  line-height: 26px;
-  color: black;
   font-weight: bold;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
@@ -470,26 +539,25 @@ h2 {
 }
 
 .booking-form input[type="number"] {
-  width: 105px;
+  width: 118px;
 
   text-align: center;
 }
 
-.children-label {
+.children-count-label {
   text-align: right;
-  padding-right: 20px;
+  padding-right: 6px;
 }
 
 .booking-btn {
-  margin-top: 18px;
-  width: 456px;
-  padding: 20px;
+  margin-top: 24px;
+  width: 458px;
+  padding: 16px;
 
   font-size: 21px;
   line-height: 26px;
   color: white;
   font-weight: bold;
-  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 
   background-color: #81b3d2;
@@ -512,8 +580,8 @@ h2 {
 }
 
 .main-footer {
-  min-height: 80px;
-  padding-top: 40px;
+  padding-top: 37px;
+  padding-bottom: 36px;
 }
 
 .footer-stratify {
@@ -525,17 +593,17 @@ h2 {
 
 .hashtags {
   float: left;
-  width: 328px;
-  margin-left: 73px;
+  width: 33.3%;
+  padding-top: 7px;
 
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  text-align: center;
 }
 
 .socials {
   float: left;
-  width: 400px;
+  width: 33.3%;
 
   text-align: center;
   font-size: 0;
@@ -543,15 +611,19 @@ h2 {
 
 .social {
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 46px;
   margin-right: 8px;
 
-  vertical-align: top;
+  vertical-align: bottom;
   text-align: center;
 
   color: #ffffff;
   background-color: #81b3d2;
+}
+
+.social:first-child {
+  margin-left: 8px;
 }
 
 .social:hover {
@@ -565,10 +637,11 @@ h2 {
 .social span {
   display: inline-block;
   width: 100%;
-  height: 100%;
+
+  padding: 14px 0;
 
   font-size: 19px;
-  line-height: 48px;
+  line-height: 20px;
   font-family: "symbols-sedona";
 }
 
@@ -577,28 +650,29 @@ h2 {
 }
 
 .social .icon-youtube {
+  padding: 13px 0;
+
   font-size: 23px;
 }
 
 .copyright {
   float: right;
-  width: 241px;
-  margin-right: 73px;
+  width: 33.3%;
+  padding-top: 2px;
+
+  text-align: center
 }
 
 .copyright a {
   display: inline-block;
   height: 39px;
-  padding-right: 138px;
+  padding-left: 10px;
+  padding-right: 130px;
   vertical-align: top;
 
   text-decoration: none;
-  font-size: 14px;
-  line-height: 26px;
+  line-height: 39px;
   color: black;
-  font-weight: normal;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
 
   background: url("../img/sprite.png") 100% -98px no-repeat;
 }
@@ -632,8 +706,6 @@ h2 {
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
 }
 
 .filter fieldset {
@@ -693,14 +765,6 @@ h2 {
   margin-bottom: 0;
 }
 
-.filter label {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
-}
-
 .price-ranges {
   position: relative;
   box-sizing: border-box;
@@ -735,11 +799,6 @@ h2 {
   display: inline;
   width: 50px;
 
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
   color: white;
 
   background: transparent;
@@ -781,6 +840,7 @@ h2 {
 
   background: white;
   border-radius: 50%;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 1, 0.14);
 
   cursor: pointer;
 }
@@ -819,10 +879,6 @@ h2 {
   margin-right: auto;
   padding: 12px 36px;
 
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
-  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   color: white;
 
@@ -851,9 +907,6 @@ h2 {
 
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
   color: black;
 }
 
@@ -862,9 +915,7 @@ h2 {
 
   font-size: 12px;
   line-height: 18px;
-  font-weight: normal;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
+
   color: black;
 }
 
@@ -885,9 +936,6 @@ h2 {
 .sort-type a {
   font-size: 12px;
   line-height: 18px;
-  font-weight: normal;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
 
   text-decoration: none;
@@ -967,10 +1015,6 @@ h2 {
 
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
-  color: black;
 }
 
 .hotel-parameters h3 a {
@@ -989,12 +1033,7 @@ h2 {
 .hotel-parameters strong {
   margin-right: 38px;
 
-  font-size: 14px;
-  line-height: 21px;
   font-weight: normal;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
-  color: #333333;
 }
 
 .hotel-actions {
@@ -1007,10 +1046,7 @@ h2 {
   padding: 8px 18px;
 
   font-size: 14px;
-  line-height: 21px;
   font-weight: bold;
-  font-family: "PT Sans", "Arial", sans-serif;
-  text-transform: uppercase;
   color: #ffffff;
 
   text-decoration: none;
@@ -1059,7 +1095,6 @@ h2 {
 
 .rating-stars .icon-star {
   font-size: 19px;
-  line-height: 21px;
   color: #81b3d2;
 }
 

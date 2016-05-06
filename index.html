@@ -33,15 +33,15 @@
           <img src="img/intro.png" width="458" height="352" alt="добро пожаловать в Седону">
         </section>
         <div class="introduction">
-          <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <h1>Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h1>
+          <p>Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <section class="features clearfix">
           <section class="feature-pictured-right clearfix">
             <div class="feature-pictured-text">
               <h2>Настоящий городок</h2>
-              <b>- №1 -</b>
-              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <b>№1</b>
+              <p>Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <figure class="feature-image">
               <img src="img/town.jpg" width="800" height="401" alt="вид на Седону">
@@ -51,19 +51,19 @@
             <section class="subfeature subfeature-housing">
               <div class="subfeature-text">
                 <h2>Жилье</h2>
-                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <p>Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
               </div>
             </section>
             <section class="subfeature subfeature-food">
               <div class="subfeature-text">
                 <h2>Еда</h2>
-                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p>Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
               </div>
             </section>
             <section class="subfeature subfeature-gifts">
               <div class="subfeature-text">
                 <h2>Сувениры</h2>
-                <p>Не только китайского, но и местного произоводства!</p>
+                <p>Не&nbsp;только китайского, но&nbsp;и&nbsp;местного произоводства!</p>
               </div>
             </section>
           </section>
@@ -72,29 +72,29 @@
               <img src="img/nature.jpg" width="800" height="401" alt="вид на Каньон">
             </figure>
             <div class="feature-pictured-text">
-              <h2>Там есть мост дьявола</h2>
-              <b>- №2 -</b>
+              <h2>Там есть <br>мост дьявола</h2>
+              <b>№2</b>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </section>
           <section class="feature-non-pictured">
             <div class="feature-non-pictured-text">
               <h2>Небольшая площадь</h2>
-              <b>- №3 -</b>
+              <b>№3</b>
               <p>Все достопримечательности находятся очень близко</p>
             </div>
           </section>
           <section class="feature-non-pictured">
             <div class="feature-non-pictured-text">
               <h2>Красивая дорога</h2>
-              <b>- №4 -</b>
+              <b>№4</b>
               <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </section>
           <section class="feature-non-pictured">
             <div class="feature-non-pictured-text">
               <h2>Мало туристов</h2>
-              <b>- №5 -</b>
+              <b>№5</b>
               <p>Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </section>
@@ -102,27 +102,41 @@
         <div class="booking">
           <div class="booking-introduction">
             <h2>Заинтересовались?</h2>
-            <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p>Укажите предполагаемые даты поездки,<br> и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
           </div>
           <a class="search-btn" href="hotels.html">Поиск гостиницы в Седоне</a>
           <section class="booking-form">
             <form action="https://echo.htmlacademy.ru" method="get">
               <div class="field clearfix">
                 <label for="arrival-date">Дата заезда:</label>
-                <input id="arrival-date" type="text" name="arrival-date" value="24 апреля 2016">
+                <div class="input-container">
+                  <input id="arrival-date" type="text" name="arrival-date" value="24&nbsp;апреля 2016">
+                  <span class="icon-calendar"></span>
+                </div>
               </div>
               <div class="field clearfix">
                 <label for="departure-date">Дата выезда:</label>
-                <input id="departure-date" type="text" name="departure-date" value="4 июля 2016">
+                <div class="input-container">
+                  <input id="departure-date" type="text" name="departure-date" value="4&nbsp;июля 2016">
+                  <span class="icon-calendar"></span>
+                </div>
               </div>
               <div class="field clearfix">
                 <div class="half-field clearfix">
-                  <label class="adult-label" for="adult">Взрослые:</label>
-                <input class="adult-input" id="adult" type="number" name="adult" min="0" step="1" value="2">
+                  <label class="adult-count-label" for="adult">Взрослые:</label>
+                  <div class="input-container">
+                    <span class="icon-minus"></span>
+                    <input class="adult-input" id="adult" type="number" name="adult" min="0" step="1" value="2">
+                    <span class="icon-plus"></span>
+                  </div>
                 </div>
                 <div class="half-field clearfix">
-                  <label class="children-label" for="children">Дети:</label>
-                <input class="children-input" id="children" type="number" name="children" min="0" step="1" value="0">
+                  <label class="children-count-label" for="children">Дети:</label>
+                  <div class="input-container">
+                    <span class="icon-minus"></span>
+                    <input class="children-input" id="children" type="number" name="children" min="0" step="1" value="0">
+                    <span class="icon-plus"></span>
+                  </div>
                 </div>
               </div>
               <button class="booking-btn" type="submit">Найти</button>
