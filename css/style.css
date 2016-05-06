@@ -178,7 +178,7 @@ h2 {
 
 .introduction h1 {
   width: 440px;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -190,7 +190,7 @@ h2 {
   width: 700px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 
   text-align: center;
 }
@@ -236,7 +236,7 @@ h2 {
   width: 800px;
   height: 256px;
   margin: 0;
-  padding: 0px;
+  padding: 0;
   overflow: hidden;
 }
 
@@ -268,30 +268,30 @@ h2 {
   width: 75px;
   height: 72px;
 
-  background: transparent url("../img/sprite.png") -10px -147px no-repeat;
+  background: url("../img/sprite.png") -10px -147px no-repeat;
 }
 
 .subfeature-food::before {
   width: 74px;
   height: 70px;
 
-  background: transparent url("../img/sprite.png") -10px -229px no-repeat;
+  background: url("../img/sprite.png") -10px -229px no-repeat;
 }
 
 .subfeature-gifts::before {
   width: 64px;
   height: 76px;
 
-  background: transparent url("../img/sprite.png") -10px -309px no-repeat;
+  background: url("../img/sprite.png") -10px -309px no-repeat;
 }
 
 .subfeature h2 {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 25px;
 }
 
 .subfeature p {
-  margin: 0px;
+  margin: 0;
   width: 290px;
   margin-left: auto;
   margin-right: auto;
@@ -363,7 +363,7 @@ h2 {
   width: 440px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 
   line-height: 24px;
 
@@ -390,6 +390,7 @@ h2 {
 
 .booking-form {
   position: absolute;
+  z-index: 5;
   left: 316px;
   top: 100%;
 
@@ -454,21 +455,21 @@ h2 {
   border: none;
 }
 
-.booking-form form input:hover {
+.booking-form input:hover {
   background: #ebebeb;
 }
 
-.booking-form form input:focus {
+.booking-form input:focus {
   background: white;
-  border: 2px solid #e5e5e5 inset;
+  outline: 2px solid #e5e5e5;
 }
 
-.booking-form form input[type="text"] {
+.booking-form input[type="text"] {
   box-sizing: border-box;
   padding-left: 15px;
 }
 
-.booking-form form input[type="number"] {
+.booking-form input[type="number"] {
   width: 105px;
 
   text-align: center;
@@ -517,7 +518,7 @@ h2 {
 
 .footer-stratify {
   position: relative;
-  z-index: 5;
+  z-index: 1;
   margin-top:-120px;
   background: rgba(255, 255, 255, 0.9);
 }
@@ -537,7 +538,7 @@ h2 {
   width: 400px;
 
   text-align: center;
-  font-size: 0px;
+  font-size: 0;
 }
 
 .social {
@@ -652,9 +653,7 @@ h2 {
 }
 
 .filter-field input[type="checkbox"] + label {
-  display: block;
-  margin: 10px 0;
-  line-height: 20px;
+  line-height: 21px;
   padding-left: 45px;
   position: relative;
   cursor: pointer;
@@ -703,6 +702,7 @@ h2 {
 }
 
 .price-ranges {
+  position: relative;
   box-sizing: border-box;
   width: 318px;
   padding: 4px 15px;
@@ -711,6 +711,20 @@ h2 {
   border: 2px solid white;
   border-radius: 2px;
   background: url("../img/range-border.jpg") 50%  4px no-repeat;
+}
+
+.price-ranges::before {
+  content: "";
+
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 2px;
+  height: 22px;
+
+  background: white;
 }
 
 .price-ranges label {
@@ -736,8 +750,6 @@ h2 {
   position: relative;
 
   margin-left: 10px;
-
-  cursor: pointer;
 }
 
 .bar {
@@ -767,11 +779,29 @@ h2 {
   width: 22px;
   height: 22px;
 
-  background: url("../img/slide.png") no-repeat;
+  background: white;
+  border-radius: 50%;
+
+  cursor: pointer;
 }
 
-.slide:hover {
-  background: url("../img/slide-hover.png") no-repeat;
+.slide::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border-radius: 50%;
+}
+
+.slide:hover::before {
+  background: #1c4f80;
 }
 
 .first-slide {
@@ -784,7 +814,6 @@ h2 {
 
 .filter .btn {
   display: block;
-  width: 132px;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -894,6 +923,11 @@ h2 {
   color: #cccccc;
 }
 
+.sort-order a:before {
+  margin: 0;
+  width: auto;
+}
+
 .sort-order .active-sort {
   color: #81b3d2;
 }
@@ -928,7 +962,7 @@ h2 {
 }
 
 .hotel-parameters h3 {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 18px;
 
   font-size: 21px;
