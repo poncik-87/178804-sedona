@@ -16,12 +16,14 @@ h1 {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  color: black;
 }
 
 h2 {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
+  color: black;
 }
 
 @font-face {
@@ -221,6 +223,7 @@ input[type=number] {
 .feature-pictured-text h2 {
   width: 160px;
   margin: 0 auto;
+  color: white;
 }
 
 .feature-pictured-text b {
@@ -412,6 +415,7 @@ input[type=number] {
   line-height: 26px;
   color: white;
   text-decoration: none;
+  font-weight: bold;
 
   background: #766357;
 }
@@ -516,6 +520,7 @@ input[type=number] {
   margin: 0;
 
   font-size: 14px;
+  line-height: 26px;
   font-weight: bold;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
@@ -671,8 +676,9 @@ input[type=number] {
   vertical-align: top;
 
   text-decoration: none;
-  line-height: 39px;
   color: black;
+  line-height: 26px;
+  vertical-align: middle;
 
   background: url("../img/sprite.png") 100% -98px no-repeat;
 }
