@@ -5,9 +5,7 @@ var link = document.querySelector(".search-btn");
 
       link.addEventListener("click", function(event) {
         event.preventDefault();
-        form_block.classList.add("init-booking-form");
         form_block.classList.toggle("show-booking-form");
-        form_block.classList.toggle("hide-booking-form");
         form_block.classList.remove("booking-form-error");
       });
 
