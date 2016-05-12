@@ -26,15 +26,42 @@ h2 {
   color: black;
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%, 100% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
     transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -287,6 +314,7 @@ input[type=number] {
   position: relative;
   top: 48%;
   display: block;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -316,6 +344,7 @@ input[type=number] {
 .subfeature-housing::before {
   position: absolute;
   left: 50%;
+  -webkit-transform: translate(-50%, -2%);
   transform: translate(-50%, -2%);
 
   width: 75px;
@@ -327,6 +356,7 @@ input[type=number] {
 .subfeature-food::before {
   position: absolute;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 
   width: 74px;
@@ -338,6 +368,7 @@ input[type=number] {
 .subfeature-gifts::before {
   position: absolute;
   left: 50%;
+  -webkit-transform: translate(-50%, -7%);
   transform: translate(-50%, -7%);
 
   width: 64px;
@@ -468,7 +499,6 @@ input[type=number] {
 }
 
 .booking-form {
-  display: none;
   position: absolute;
   z-index: 5;
   left: 316px;
@@ -480,12 +510,18 @@ input[type=number] {
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
+.booking-form-hide {
+  display: none;
+}
+
 .show-booking-form {
   display: block;
+  -webkit-animation: appear 0.6s;
   animation: appear 0.6s;
 }
 
 .booking-form-error {
+  -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
 
@@ -883,6 +919,7 @@ input[type=number] {
   position:absolute;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
   width: 2px;
@@ -955,6 +992,7 @@ input[type=number] {
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
   width: 4px;

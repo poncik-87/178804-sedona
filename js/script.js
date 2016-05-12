@@ -9,6 +9,8 @@ var adult_count = form_block.querySelector(".adult-input");
 var adult_count_minus = form_block.querySelector(".adult-container .icon-minus");
 var adult_count_plus = form_block.querySelector(".adult-container .icon-plus");
 
+form_block.classList.add("booking-form-hide");
+
 link.addEventListener("click", function(event) {
   event.preventDefault();
   form_block.classList.toggle("show-booking-form");
