@@ -1,20 +1,20 @@
 var link = document.querySelector(".search-btn");
-var form_block = document.querySelector(".booking-form");
-var form = form_block.querySelector("form");
+var formBlock = document.querySelector(".booking-form");
+var form = formBlock.querySelector("form");
 var inputs = form.querySelectorAll("input");
-var child_count = form_block.querySelector(".children-input");
-var child_count_minus = form_block.querySelector(".children-container .icon-minus");
-var child_count_plus = form_block.querySelector(".children-container .icon-plus");
-var adult_count = form_block.querySelector(".adult-input");
-var adult_count_minus = form_block.querySelector(".adult-container .icon-minus");
-var adult_count_plus = form_block.querySelector(".adult-container .icon-plus");
+var childCount = formBlock.querySelector(".children-input");
+var childCountMinus = formBlock.querySelector(".children-container .icon-minus");
+var childcountplus = formBlock.querySelector(".children-container .icon-plus");
+var adultcount = formBlock.querySelector(".adult-input");
+var adultcountMinus = formBlock.querySelector(".adult-container .icon-minus");
+var adultCountPlus = formBlock.querySelector(".adult-container .icon-plus");
 
-form_block.classList.add("booking-form-hide");
+formBlock.classList.add("booking-form-hide");
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
-  form_block.classList.toggle("show-booking-form");
-  form_block.classList.remove("booking-form-error");
+  formBlock.classList.toggle("show-booking-form");
+  formBlock.classList.remove("booking-form-error");
 });
 
 form.addEventListener("submit", function(event) {
@@ -24,32 +24,32 @@ form.addEventListener("submit", function(event) {
   }
   if (!filled) {
     event.preventDefault();
-    form_block.classList.remove("booking-form-error");
-    form_block.offsetWidth = form_block.offsetWidth;
-    form_block.classList.add("booking-form-error");
+    formBlock.classList.remove("booking-form-error");
+    formBlock.offsetWidth = formBlock.offsetWidth;
+    formBlock.classList.add("booking-form-error");
   }
 });
 
-child_count_minus.addEventListener("mouseup", function(event) {
-  var num_child_count = Number(child_count.value);
-  if (num_child_count > 0)
-    child_count.value = num_child_count - 1;
+childCountMinus.addEventListener("click", function() {
+  var numChildCount = Number(childCount.value);
+  if (numChildCount > 0)
+    childCount.value = numChildCount - 1;
 });
 
-child_count_plus.addEventListener("mouseup", function(event) {
-  var num_child_count = Number(child_count.value);
-  if (num_child_count < 49)
-    child_count.value = num_child_count + 1;
+childCountPlus.addEventListener("click", function() {
+  var numChildCount = Number(childCount.value);
+  if (numChildCount < 49)
+    childCount.value = numChildCount + 1;
 });
 
-adult_count_minus.addEventListener("mouseup", function(event) {
-  var num_adult_count = Number(adult_count.value);
-  if (num_adult_count > 1)
-    adult_count.value = num_adult_count - 1;
+adultCountMinus.addEventListener("mouseup", function() {
+  var numAdultCount = Number(adultCount.value);
+  if (numAdultCount > 1)
+    adultCount.value = numAdultCount - 1;
 });
 
-adult_count_plus.addEventListener("mouseup", function(event) {
-  var num_adult_count = Number(adult_count.value);
-  if (num_adult_count < 49)
-    adult_count.value = num_adult_count + 1;
+adultCountPlus.addEventListener("mouseup", function() {
+  var numAdultCount = Number(adultCount.value);
+  if (numAdultCount < 49)
+    adultCount.value = numAdultCount + 1;
 });
