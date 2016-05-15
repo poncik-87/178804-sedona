@@ -408,6 +408,8 @@ input[type=number] {
 
 .non-pictured-features {
   font-size: 0;
+
+  background-color: #eeeeee;
 }
 
 .feature-non-pictured {
@@ -419,8 +421,6 @@ input[type=number] {
   font-size: 14px;
   vertical-align: top;
   text-align: center;
-
-  background-color: #eeeeee;
 }
 
 .feature-non-pictured h2 {
@@ -703,6 +703,13 @@ input[type=number] {
   height: 593px;
 
   background: #f2f1ef url("../img/map.jpg");
+}
+
+.booking-map iframe {
+  height: 593px;
+  width: 100%;
+  frameborder: 0;
+  border: 0;
 }
 
 .main-footer {
@@ -1194,6 +1201,8 @@ input[type=number] {
 
 .hotel-image img {
   display: block;
+  width: 135px;
+  height: 90px;
 }
 
 .hotel-parameters {
