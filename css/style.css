@@ -245,13 +245,13 @@ input[type=number] {
 
 .introduction {
   padding-top: 58px;
-  padding-bottom:  50px;
+  padding-bottom:  49px;
 }
 
 .introduction h1 {
   width: 440px;
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 
@@ -333,8 +333,8 @@ input[type=number] {
   display: inline-block;
   position: relative;
   width: 400px;
-  padding-top: 160px;
-  padding-bottom: 86px;
+  padding-top: 162px;
+  padding-bottom: 81px;
 
   text-align: center;
   font-size: 14px;
@@ -344,7 +344,7 @@ input[type=number] {
 .subfeature::before {
   content: "";
   position: absolute;
-  top: 60px;
+  top: 61px;
   left: 160px;
 }
 
@@ -386,7 +386,7 @@ input[type=number] {
 
 .subfeature h2 {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   word-break: break-word;
 }
 
@@ -447,8 +447,8 @@ input[type=number] {
 }
 
 .booking-introduction {
-  padding-top: 51px;
-  padding-bottom: 47px;
+  padding-top: 49px;
+  padding-bottom: 44px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -483,8 +483,8 @@ input[type=number] {
   display: block;
   width: 568px;
   margin: 0 auto;
-  padding-top: 29px;
-  padding-bottom: 32px;
+  padding-top: 31px;
+  padding-bottom: 29px;
 
   text-align: center;
   font-size: 21px;
@@ -673,9 +673,9 @@ input[type=number] {
 }
 
 .booking-btn {
-  margin-top: 29px;
+  margin-top: 27px;
   width: 458px;
-  padding: 17px;
+  padding: 16px;
 
   font-size: 21px;
   line-height: 26px;
@@ -706,7 +706,7 @@ input[type=number] {
 }
 
 .main-footer {
-  padding-top: 37px;
+  padding-top: 35px;
   padding-bottom: 37px;
 }
 
@@ -720,7 +720,7 @@ input[type=number] {
 .hashtags {
   float: left;
   width: 33.3%;
-  padding-top: 7px;
+  padding-top: 11px;
 
   font-size: 21px;
   line-height: 26px;
@@ -738,8 +738,8 @@ input[type=number] {
 
 .social {
   display: inline-block;
-  width: 44px;
-  height: 46px;
+  width: 45px;
+  height: 48px;
   margin-right: 8px;
 
   vertical-align: top;
@@ -782,7 +782,7 @@ input[type=number] {
 .copyright {
   float: right;
   width: 33.3%;
-  padding-top: 3px;
+  padding-top: 5px;
 
   text-align: center
 }
@@ -824,7 +824,7 @@ input[type=number] {
 
 .filter {
   padding-top: 28px;
-  padding-bottom: 23px;
+  padding-bottom: 20px;
   padding-left: 62px;
   padding-right: 73px;
 
@@ -834,7 +834,7 @@ input[type=number] {
 
 .filter legend {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   font-size: 16px;
   line-height: 21px;
@@ -844,7 +844,7 @@ input[type=number] {
 
 .last-filter-block legend {
   padding-left: 4px;
-  margin-bottom: 11px;
+  margin-bottom: 9px;
 }
 
 .filter fieldset {
@@ -1029,7 +1029,7 @@ input[type=number] {
   margin-top: 54px;
   margin-left: auto;
   margin-right: auto;
-  padding: 7px 33px;
+  padding: 5px 35px;
 
   text-transform: uppercase;
   color: white;
@@ -1051,7 +1051,7 @@ input[type=number] {
   padding-left: 73px;
   padding-right: 73px;
   padding-top: 30px;
-  padding-bottom: 24px;
+  padding-bottom: 22px;
 
   word-break: break-word;
 }
@@ -1173,8 +1173,8 @@ input[type=number] {
 }
 
 .hotel {
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   padding-left: 73px;
   padding-right: 73px;
 
@@ -1204,6 +1204,7 @@ input[type=number] {
 
 .hotel-parameters h3 {
   margin: 0;
+  margin-top: 2px;
   margin-bottom: 8px;
 
   font-size: 21px;
@@ -1242,7 +1243,7 @@ input[type=number] {
 
 .hotel-parameters-info {
   width: 260px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .hotel-parameters-buttons {
