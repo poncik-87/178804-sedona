@@ -4,9 +4,9 @@ var form = formBlock.querySelector("form");
 var inputs = form.querySelectorAll("input");
 var childCount = formBlock.querySelector(".children-input");
 var childCountMinus = formBlock.querySelector(".children-container .icon-minus");
-var childcountplus = formBlock.querySelector(".children-container .icon-plus");
-var adultcount = formBlock.querySelector(".adult-input");
-var adultcountMinus = formBlock.querySelector(".adult-container .icon-minus");
+var childCountPlus = formBlock.querySelector(".children-container .icon-plus");
+var adultCount = formBlock.querySelector(".adult-input");
+var adultCountMinus = formBlock.querySelector(".adult-container .icon-minus");
 var adultCountPlus = formBlock.querySelector(".adult-container .icon-plus");
 
 formBlock.classList.add("booking-form-hide");
@@ -42,13 +42,13 @@ childCountPlus.addEventListener("click", function() {
     childCount.value = numChildCount + 1;
 });
 
-adultCountMinus.addEventListener("mouseup", function() {
+adultCountMinus.addEventListener("click", function() {
   var numAdultCount = Number(adultCount.value);
   if (numAdultCount > 1)
     adultCount.value = numAdultCount - 1;
 });
 
-adultCountPlus.addEventListener("mouseup", function() {
+adultCountPlus.addEventListener("click", function() {
   var numAdultCount = Number(adultCount.value);
   if (numAdultCount < 49)
     adultCount.value = numAdultCount + 1;

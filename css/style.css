@@ -153,6 +153,7 @@ input[type=number] {
 
 .main-menu{
   position: relative;
+  padding: 0;
 }
 
 .main-menu ul {
@@ -163,17 +164,18 @@ input[type=number] {
 }
 
 .main-menu li {
+  display: inline-block;
   box-sizing: border-box;
-  width: 23%;
+  width: 22%;
+
+  vertical-align: top;
 }
 
-.left-floated {
-  float: left;
+.main-menu-left {
   padding-right: 20px;
 }
 
-.right-floated {
-  float: right;
+.main-menu-right {
   padding-left: 20px;
 
   text-align: right;
@@ -205,6 +207,10 @@ input[type=number] {
 
 .main-menu a.active:active {
   color: rgba(118, 99, 87, 0.3);
+}
+
+.before-logo {
+  margin-right: 112px;
 }
 
 .main-menu-logo {
@@ -239,7 +245,7 @@ input[type=number] {
 
 .introduction {
   padding-top: 58px;
-  padding-bottom:  55px;
+  padding-bottom:  50px;
 }
 
 .introduction h1 {
@@ -259,6 +265,7 @@ input[type=number] {
   margin-bottom: 0;
 
   text-align: center;
+  line-height: 26px;
 }
 
 .feature-pictured-right,
@@ -327,7 +334,7 @@ input[type=number] {
   position: relative;
   width: 400px;
   padding-top: 160px;
-  padding-bottom: 81px;
+  padding-bottom: 86px;
 
   text-align: center;
   font-size: 14px;
@@ -440,7 +447,7 @@ input[type=number] {
 }
 
 .booking-introduction {
-  padding-top: 47px;
+  padding-top: 51px;
   padding-bottom: 47px;
   padding-left: 0;
   padding-right: 0;
@@ -615,6 +622,8 @@ input[type=number] {
   color: black;
   font-weight: bold;
   word-break: break-word;
+
+  cursor: pointer;
 }
 
 .booking-form input {
@@ -810,11 +819,12 @@ input[type=number] {
 
   line-height: 26px;
   word-break: break-word;
+  vertical-align: baseline;
 }
 
 .filter {
   padding-top: 28px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
   padding-left: 62px;
   padding-right: 73px;
 
@@ -824,7 +834,7 @@ input[type=number] {
 
 .filter legend {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 
   font-size: 16px;
   line-height: 21px;
@@ -834,7 +844,7 @@ input[type=number] {
 
 .last-filter-block legend {
   padding-left: 4px;
-  margin-bottom: 9px;
+  margin-bottom: 11px;
 }
 
 .filter fieldset {
