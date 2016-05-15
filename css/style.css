@@ -708,7 +708,6 @@ input[type=number] {
 .booking-map iframe {
   height: 593px;
   width: 100%;
-  frameborder: 0;
   border: 0;
 }
 
